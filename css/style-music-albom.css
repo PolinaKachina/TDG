@@ -1,0 +1,55 @@
+.content {
+  max-width: 1268px;
+}
+
+.music-audio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.text-song /* левая колонка */
+{
+    width: 50%;    /* ширина */
+    min-width: 180px;  /* минимальная ширина сужения */
+    height: auto;  /* высота */
+    box-sizing: border-box;
+    float: left; /* плавающие блоки */
+    color: #444444;
+    padding-left: 200px;
+    padding-top: 0;
+    line-height: 25px; /* Расстояние между строками */
+    text-align: center;
+}
+
+.translating-song {
+  text-align: center;
+  color: #444444;
+  line-height: 25px; /* Расстояние между строками */
+  margin-right: 200px;
+}
+
+.text-song-title, .translating-song-title {
+  margin-top: 10px;
+  color: #595858;
+}
+
+.translating {
+  padding-top: 10px;
+}
+
+.translating-song-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #444444; /* Задаем цвет текста */
+  font-size: 10px; /* Размер шрифта */
+}
+.link-song {
+  margin-left: 200px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.translating-song-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,220 @@
+/* ---начало---Регистрируем новый шрифт--- */
+@font-face {
+  font-family: "Californian-FB";
+  src: local("Californian-FB"), url("../fonts/Californian-FB.ttf") format("ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Californian-FB-Bold";
+  src: local("Californian-FB-Bold"),
+    url("../fonts/Californian-FB-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Vollkorn";
+  src: local("Vollkorn"), url("../fonts/Vollkorn-Regular.ttf") format("ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Vollkorn-Bold";
+  src: local("Vollkorn-Bold"),
+    url("../fonts/Vollkorn-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+/* --конец---Регистрируем новый шрифт--- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+}
+body {
+  font-family: "Volkorn", serif; /* Задали шрифты для всей страницы */
+  background-color: #dfdfdf;
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+/* Чтобы подвал прилип к низу страницы */
+html,
+body {
+	height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+/* ---Начало Стилизуем шапку */
+.header {
+  background: #d8d7d7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Тень шапки */
+  padding-top: 25px; /* Отступ сверху шапки */
+  padding-bottom: 25px; /* Отступ снизу шапки */
+  margin-bottom: 42px; /* шапка двигает контент вниз на 30пикселей */
+}
+
+/* Класс, содержащий меню и логотип */
+.header-wrapper {
+  max-width: 1240px; /* Максимальная ширина блока */
+  width: 90%; /* Ширина блока */
+  margin: auto; /* Выравнивает по середине */
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  align-items: center; /* Выравнивает элементы по центру */
+}
+
+/* Задает расстояние между меню и заголовком (60) */
+.header-nav {
+  margin-left: 180px;
+}
+
+/* меню */
+.header-menu {
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  list-style: none; /* Отключаем точки списка */
+  padding: 0; /* Убираем отступ перед первым словом */
+  margin: 0; /* Отключаем отступы сверху и снизу */
+}
+
+/* Класс, отвечающий за ссылки в меню */
+.header-menu-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #595858; /* Задаем цвет текста */
+  margin-right: 104px; /* Отступ между пунктами меню */
+  font-size: 18px; /* Размер шрифта */
+  line-height: 28px; /* Расстояние между строками, если вдру появится вторая строка */
+  text-transform: uppercase;
+}
+.header-menu-link-shop {
+  margin-right: 0;
+}
+.header-logo {
+  margin-top: 5px;
+}
+/* при наведении на пункт меню */
+.header-menu-link:hover {
+  color: #e62020; /* Задаем цвет текста */
+}
+/* ---Конец Стилизуем шапку */
+
+/* --Начало Контент */
+.content-image {
+  width: 884px;
+  margin: auto; /* Выравнивает по середине */
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  align-items: center; /* Выравнивает элементы по центру */
+  margin-bottom: 50px;
+}
+
+.content-title {
+  font-family: Californian FB;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 115px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-top: -30px;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  color: #161616;
+}
+/* --Конец Контент */
+
+/* ---Начало Подвал */
+.footer {
+  border-top: 1px solid #595858; /* Границы блока: толщина и цвет */
+  background: #d8d7d7;
+  padding-top: 30px; /* Отступ сверху  */
+  padding-bottom: 3px; /* Отступ снизу  */
+}
+
+.footer-wrapper {
+  max-width: 1240px; /* Максимальная ширина блока */
+  width: 90%; /* Ширина блока */
+  margin: auto; /* Выравнивает по середине */
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  align-items: center; /* Выравнивает элементы по центру */
+  padding-bottom: 20px; /* Отступ снизу  */
+}
+
+.footer-icons {
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  list-style: none; /* Отключаем точки списка */
+  padding: 0; /* Убираем отступ перед первым словом */
+  margin: 0; /* Отключаем отступы сверху и снизу */
+  margin-left: auto;
+}
+.footer-icon-link {
+  margin-right: 20px; /* Отступ между пунктами меню */
+}
+
+.icon-twitter {
+  width: 25px;
+  height: 25px;
+  fill: #595858;
+}
+.icon-twitter:hover {
+  fill: #e62020;
+}
+
+.icon-vk {
+  width: 25px;
+  height: 25px;
+  fill: #595858;
+}
+.icon-vk:hover {
+  fill: #e62020;
+}
+
+.icon-facebook {
+  width: 24px;
+  height: 24px;
+  fill: #595858;
+}
+.icon-facebook:hover {
+  fill: #e62020;
+}
+.icon-instagram {
+  width: 25px;
+  height: 25px;
+  fill: #595858;
+}
+.icon-instagram:hover {
+  fill: #e62020;
+}
+
+.year {
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+}
+.footer-official-page {
+  color: #595858;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-weight: 800;/*жирность*/
+}
+.footer-official-page:hover {
+  color: #e62020;
+}
+
+  /* --начало--фиксируем шапку */
+  .header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  /* --конец--фиксируем шапку */
+  /* сделаем, чтобы контент отодвигался сверху и его не скрывала шапка */
+  .content {
+    margin-top: 135px;
+    margin-bottom: 60px;
+  }

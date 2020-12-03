@@ -1,0 +1,42 @@
+.content {
+  margin-top: 120px;
+}
+
+.header-menu-link-photo {
+  color: #e62020; /* Задаем цвет текста */
+  text-decoration: underline;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-evenly; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  padding-top: 20px;
+}
+
+.photos-alboms-image {
+  width: 300px;
+  height: 250px;
+  border: 8px solid #bababa;
+}
+
+.photos-alboms {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.photos-alboms-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #444444; /* Задаем цвет текста */
+  margin-right: 1px; /* Отступ между пунктами меню */
+  font-size: 18px; /* Размер шрифта */
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.photos-alboms-link:hover {
+  color: #e62020;
+  text-decoration: underline;
+}

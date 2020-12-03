@@ -1,0 +1,58 @@
+
+.title-alboms {
+  text-transform: none;
+}
+.photos-alboms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos-alboms-image {
+  border: 10px solid #bababa;
+  box-sizing: border-box;
+  padding-bottom: 0;
+}
+.parts-ofGroup-now {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.parts-ofGroup-now a:hover {
+  opacity: 0.8;
+}
+
+.alboms-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #595858; /* Задаем цвет текста */
+  font-size: 10px; /* Размер шрифта */
+}
+
+.link {
+  text-align: center;
+}
+
+.alboms-link:hover {
+  text-decoration: underline;
+}
+
+.link-back {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.alboms-link-back {
+  border: 2px solid #bababa;
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #595858; /* Задаем цвет текста */
+  font-size: 12px; /* Размер шрифта */
+  text-transform: uppercase;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.alboms-link-back:hover {
+  color: #e62020;
+}

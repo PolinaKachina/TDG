@@ -1,0 +1,70 @@
+.content {
+  max-width: 900px;
+  margin-top: 120px;
+}
+
+.history-title {
+  text-transform: none;
+}
+.header-menu-link-music {
+  color: #e62020; /* Задаем цвет текста */
+  text-decoration: underline;
+}
+.music-albom-li {
+  list-style: none; /* Отключаем точки списка */
+}
+
+.music-album-image {
+  border: 5px solid #bababa;
+  width: 350px;
+  height: 350px;
+}
+
+ul.music-ul {
+  padding-left: 80px;
+  padding-top: 10px;
+}
+
+ol.music-ul {
+  padding-right: 150px;
+  padding-top: 10px;
+}
+
+
+.music-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #444444; /* Задаем цвет текста */
+  font-size: 18px; /* Размер шрифта */
+}
+
+li.music-albom {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #444444; /* Задаем цвет текста */
+}
+
+.music-link:hover {
+  color: #e62020;
+  text-decoration: underline;
+}
+
+.link-back {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.music-link-back {
+  border: 2px solid #bababa;
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #595858; /* Задаем цвет текста */
+  font-size: 12px; /* Размер шрифта */
+  text-transform: uppercase;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.music-link-back:hover {
+  color: #e62020;
+}

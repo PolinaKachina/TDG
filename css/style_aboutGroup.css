@@ -1,0 +1,223 @@
+.header-menu-link_group {
+  color: #e62020; /* Задаем цвет текста */
+  text-decoration: underline;
+}
+
+.header {
+  margin-bottom: 3px;
+}
+
+
+/* ---Начало Стилизуем шапку страницы О группе */
+.header_aboutGroup {
+  background: #d8d7d7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Тень шапки */
+  padding-top: 15px; /* Отступ сверху шапки */
+  padding-bottom: 15px; /* Отступ снизу шапки */
+  margin-bottom: 42px; /* шапка двигает контент вниз на 30пикселей */
+}
+
+/* Класс, содержащий меню */
+.header-wrapper_aboutGroup {
+  max-width: 1240px; /* Максимальная ширина блока */
+  width: 25%; /* Ширина блока */
+  margin: auto; /*Выравнивает по середине */
+}
+
+/* меню */
+.header-menu_aboutGroup {
+  list-style: none; /* Отключаем точки списка */
+  padding: 0; /* Убираем отступ перед первым словом */
+  margin: 0; /* Отключаем отступы сверху и снизу */
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  align-items: center; /* Выравнивает элементы по центру */
+}
+
+/* Класс, отвечающий за ссылки в меню */
+.header-menu-link_aboutGroup {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #595858; /* Задаем цвет текста */
+  margin-right: 1px; /* Отступ между пунктами меню */
+  font-size: 18px; /* Размер шрифта */
+  line-height: 28px; /* Расстояние между строками, если вдру появится вторая строка */
+  text-transform: none;
+}
+
+/* при наведении на пункт меню */
+.header-menu-link_aboutGroup:hover {
+  color: #e62020; /* Задаем цвет текста */
+}
+/* ---Конец Стилизуем шапку */
+
+
+/* ---Начало контент */
+.content {
+  max-width: 1268px; /* Максимальная ширина блока */
+  width: 90%; /* Ширина блока */
+  margin: auto; /* Выравнивает по середине */
+}
+/* ---Начало ИСТОРИЯ */
+.history-title {
+  margin: auto;
+  margin-bottom: 42px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #595858;
+  letter-spacing: 1px;
+}
+
+.history-body-historis-background {
+  background: #D8D7D7;
+  margin-top: 10px;
+  margin-bottom: 42px;
+}
+
+.history-title-historis {
+  font-weight: 700;/*жирность*/
+  font-size: 19px;
+  text-align: center;
+  color: #444444;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
+.history-image-float-left {
+  float: left;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.history-text {
+  font-size: 16px;
+  margin-right: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 25px;
+  font-weight: 500;
+  line-height: 23px;/*расстояние между строками*/
+  text-indent: 30px;
+  color: #444444;
+}
+.title-2012 {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.history-title-historis-1992 {
+  padding-top: 20px;
+}
+
+.text-p1 {
+  margin-top: -10px;
+}
+
+.history-image-float-right {
+  float: right;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.text-p2 {
+  margin-top: 30px;
+}
+.text-p3 {
+  padding-bottom: 20px;
+}
+.text-p4 {
+  margin-bottom: 30px;
+}
+.text-p5 {
+  margin-bottom: 100px;
+}
+
+.image-2005 .image-2009 {
+  margin-top: -15px;
+}
+.image-2006 .image-2012 {
+  margin-top: 10px;
+}
+/* ---Конец ИСТОРИЯ */
+
+.aboutGroup-parts {
+  display: flex;
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+}
+
+.parts-ofGroup-now-image {
+  width: 350px;
+  height: 485px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.parts-ofGroup-now {
+  list-style: none; /* Отключаем точки списка */
+
+  display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  align-items: center; /* Выравнивает элементы по центру */
+}
+
+.parts-title {
+  display: flex;
+  justify-content: space-between; /*Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.*/
+  align-items: center; /* Выравнивает элементы по центру */
+  padding-left: 230px;
+  padding-right: 180px;
+}
+
+.aboutGroup-parts-ofGroup {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.parts-now {
+  padding-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.parts-last {
+  padding-top: 10px;
+  margin-bottom: -30px;
+}
+
+.parts-ofGroup-now-link {
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #444444; /* Задаем цвет текста */
+  margin-right: 1px; /* Отступ между пунктами меню */
+  font-size: 18px; /* Размер шрифта */
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.parts-ofGroup-now-link:hover {
+  color: #e62020;
+  text-decoration: underline;
+}
+
+
+/* ---Конец контент */
+
+ /* --начало--фиксируем шапку */
+ .header_aboutGroup {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 81px;
+  right: 0;
+  width: 100%;
+}
+/* --конец--фиксируем шапку */
+/* сделаем, чтобы контент отодвигался сверху и его не скрывала шапка */
+.content {
+  margin-top: 182px;
+}
