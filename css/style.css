@@ -17,33 +17,32 @@
 }
 @font-face {
   font-family: "Vollkorn-Bold";
-  src: local("Vollkorn-Bold"),
-    url("../fonts/Vollkorn-Bold.ttf") format("ttf");
+  src: local("Vollkorn-Bold"), url("../fonts/Vollkorn-Bold.ttf") format("ttf");
   font-weight: bold;
 }
 /* --конец---Регистрируем новый шрифт--- */
 * {
   box-sizing: border-box;
   margin: 0;
-	padding: 0;
+  padding: 0;
 }
 body {
   font-family: "Volkorn", serif; /* Задали шрифты для всей страницы */
   background-color: #dfdfdf;
   display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  flex-direction: column;
+  min-height: 100%;
 }
 /* Чтобы подвал прилип к низу страницы */
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 .content {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 /* ---Начало Стилизуем шапку */
 .header {
@@ -56,7 +55,7 @@ body {
 
 /* Класс, содержащий меню и логотип */
 .header-wrapper {
-  max-width: 1240px; /* Максимальная ширина блока */
+  max-width: 1440px; /* Максимальная ширина блока */
   width: 90%; /* Ширина блока */
   margin: auto; /* Выравнивает по середине */
   display: flex; /* Элементы блока располагаются не вертикально, а горизонтально */
@@ -66,7 +65,7 @@ body {
 
 /* Задает расстояние между меню и заголовком (60) */
 .header-nav {
-  margin-left: 180px;
+  margin-left: 100px;
 }
 
 /* меню */
@@ -75,27 +74,36 @@ body {
   list-style: none; /* Отключаем точки списка */
   padding: 0; /* Убираем отступ перед первым словом */
   margin: 0; /* Отключаем отступы сверху и снизу */
+  margin-top: 10px;
 }
 
 /* Класс, отвечающий за ссылки в меню */
 .header-menu-link {
   text-decoration: none; /* Отключаем подчеркивание */
   color: #595858; /* Задаем цвет текста */
-  margin-right: 104px; /* Отступ между пунктами меню */
+  margin-right: 100px; /* Отступ между пунктами меню */
   font-size: 18px; /* Размер шрифта */
-  line-height: 28px; /* Расстояние между строками, если вдру появится вторая строка */
+  line-height: 20px; /* Расстояние между строками, если вдру появится вторая строка */
   text-transform: uppercase;
 }
-.header-menu-link-shop {
+.header-menu-link-link {
   margin-right: 0;
+  font-size: 12px; /* Размер шрифта */
+  text-decoration: none; /* Отключаем подчеркивание */
+  color: #595858; /* Задаем цвет текста */
+}
+.header-menu-item-link {
+  list-style: none; /* Отключаем точки списка */
 }
 .header-logo {
   margin-top: 5px;
 }
 /* при наведении на пункт меню */
-.header-menu-link:hover {
+.header-menu-link:hover,
+.header-menu-link-link:hover {
   color: #e62020; /* Задаем цвет текста */
 }
+
 /* ---Конец Стилизуем шапку */
 
 /* --Начало Контент */
@@ -197,24 +205,24 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1em;
-  font-weight: 800;/*жирность*/
+  font-weight: 800; /*жирность*/
 }
 .footer-official-page:hover {
   color: #e62020;
 }
 
-  /* --начало--фиксируем шапку */
-  .header {
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    right: 0;
-    width: 100%;
-  }
-  /* --конец--фиксируем шапку */
-  /* сделаем, чтобы контент отодвигался сверху и его не скрывала шапка */
-  .content {
-    margin-top: 135px;
-    margin-bottom: 60px;
-  }
+/* --начало--фиксируем шапку */
+.header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+/* --конец--фиксируем шапку */
+/* сделаем, чтобы контент отодвигался сверху и его не скрывала шапка */
+.content {
+  margin-top: 135px;
+  margin-bottom: 60px;
+}
